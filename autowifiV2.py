@@ -1,8 +1,8 @@
 import telnetlib
 import json
 
-with open('autowifi.json') as f:
-    data = json.load(f)
+with open('wificonfig.json') as f:       #parsing as f
+    data = json.load(f)                  #variable sets to read the imported json file
 
 for entry in data['aironet']:
     host_ip = entry['host_ip']
@@ -40,6 +40,7 @@ for entry in data['aironet']:
 
     tn.write(b"Default Int Dot11Radio 0" + b"\n")
     tn.write(b"Int Dot11Radio 0" + b"\n")
+    tn.write(b"bridge-group 1" + b"\n")
     tn.write(b"Channel " + channel.encode('ascii') + b"\n")
     tn.write(b"no shut\n")
     tn.write(b"encryption mode ciphers " + encmod.encode('ascii') + b"\n")
