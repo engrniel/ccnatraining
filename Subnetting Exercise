@@ -1,0 +1,11 @@
+Users: 4300
+Branch Network: 10.0.0.0/8
+
+ANSWER:
+No. of Bits: /13
+Subnet Mask: /32 - /13 = /19
+Increment: 32i
+Sub-network: 10.0.32.0/19
+First Usable IP Host: 10.0.32.1/19 (Gateway IP)
+Last Usable IP Host: 10.0.63.255/19 (Broadcast IP)
+Next Network: 10.0.64.0/19 
