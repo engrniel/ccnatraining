@@ -99,6 +99,7 @@ default-router 10.200.0.33
 dns-server 8.8.8.8
 domain-name mds.com
 exit
+bp
 
 D2:
 ip dhcp pool webservervlan500
@@ -107,13 +108,41 @@ default-router 10.200.0.65
 dns-server 8.8.8.8
 domain-name mds.com
 exit
+int e1/0
+switchport mode access
+switchport access vlan 500
+no shut
+exit
 
 
-P1 & P2:
+A1:
+int range e0/0-1
+switchport mode access
+switchport access vlan 350
+no shut
+exit
+
+A2:
+default int range e0/0-1
+int range e0/0, e1/0
+switchport mode access
+switchport access vlan 400
+no shut
+exit
+
+P1 & P2 :
+conf t
+default int range e0/0-1
+int range e0/0, e1/0
+ip add dhcp
+no shut
+exit
+do bp
+
+S1 & S2:
 conf t
 int e1/0
 ip add dhcp
 no shut
 exit
-sho bp
-
+do bp
