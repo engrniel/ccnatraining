@@ -166,4 +166,37 @@ conf t
 ip route 0.0.0.0 0.0.0.0 10.200.2.1
 exit
 
-R1
+********************EIGRP ROUTING********************
+FOR 64 BIT:
+D1:
+conf t
+router eigrp biteigrp
+address-family ipv4 unicast autonomous-system 100
+network 10.1.4.4 0.0.0.3
+network 10.200.16.0 0.0.15.255
+network 10.200.2.0 0.0.1.255
+network 10.200.0.32 0.0.0.31
+end
+show ip eigrp traffic
+
+D2:
+conf t
+router eigrp biteigrp
+address-family ipv4 unicast autonomous-system 100
+network 10.1.4.8 0.0.0.3
+network 10.200.16.0 0.0.15.255
+network 10.200.2.0 0.0.1.255
+network 10.200.0.32 0.0.0.31
+network 10.200.0.64 0.0.0.31
+end
+show ip eigrp traffic
+
+FOR 32 BIT:
+R4:
+conf t
+router eigrp 100
+no auto-summary
+network 10.1.4.4 0.0.0.3
+network 10.1.4.8 0.0.0.3
+end
+sho ip eigrp traffic
