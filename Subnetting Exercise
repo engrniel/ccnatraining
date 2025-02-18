@@ -21,3 +21,21 @@ Sub-network: 10.0.2.0/23
 First Usable IP Host: 10.0.2.1 (Gateway IP)
 Last Usable IP Host: 10.0.3.255 (Broadcast IP)
 Next Network: 10.0.4.0/23 
+
+
+Users: 210
+Branch Network: 10.0.0.0/8
+
+ANSWER:
+No. of Bits: /8
+Subnet Mask: /32 - /8 = /24
+Increment: 1i, 3rd
+Sub-network: 10.0.1.0/24
+First Usable IP Host: 10.0.1.1 (Gateway IP)
+Last Usable IP Host: 10.0.1.255 (Broadcast IP)
+Next Network: 10.0.2.0/24
+
+
+
+
+
