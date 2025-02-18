@@ -15,9 +15,9 @@ Branch Network: 10.0.0.0/8
 
 ANSWER:
 No. of Bits: /9
-Subnet Mask: /32 - /9 = /25
-Increment: 3rd, 128i
-Sub-network: 10.0.128.0/25
-First Usable IP Host: 10.0.128.1 (Gateway IP)
-Last Usable IP Host: 10.0.255.255 (Broadcast IP)
-Next Network: 10.1.0.0/25 
+Subnet Mask: /32 - /9 = /23
+Increment: 2i, 2nd Octet
+Sub-network: 10.0.2.0/23
+First Usable IP Host: 10.0.2.1 (Gateway IP)
+Last Usable IP Host: 10.0.3.255 (Broadcast IP)
+Next Network: 10.0.4.0/23 
