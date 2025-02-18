@@ -29,7 +29,7 @@ Increment: 32i, 4th Octet
 Sub-network: 10.200.0.32 255.255.255.224
 First-Usable IP: 10.200.0.33
 Last-Usable IP: 10.200.0.63
-VLAN 400: management
+VLAN 450: dnsfarm
 
 S2 (WEB FARM - SERVER):
 No. of Users: 20
@@ -39,4 +39,15 @@ Increment: 32i, 4th Octet
 Sub-network: 10.200.0.64 255.255.255.224
 First-Usable IP: 10.200.0.65
 Last-Usable IP: 10.200.0.95
-VLAN 400: management
+VLAN 500: webfarm
+
+********************CONFIGURATION OF INTERFACES********************
+D1:
+conf t
+vlan 350
+name agents
+vlan 400
+name management
+
+
+
