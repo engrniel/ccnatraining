@@ -1,0 +1,43 @@
+@FW SITE 1
+en
+config t
+int gi 2
+ip add 192.168.102.10 255.255.255.0
+no shut
+exit
+no logging console
+no ip domain lookup
+int gi1
+ip add 208.8.8.10 255.255.255.0
+no shut
+int gi3
+ip add 10.10.10.1 255.255.255.0
+no shut
+exit
+ip route 0.0.0.0 0.0.0.0 208.8.8.20
+
+@FW SITE 2
+en
+config t
+int gi 2
+ip add 192.168.102.20 255.255.255.0
+no shut
+exit
+no logging console
+no ip domain lookup
+int gi1
+ip add 208.8.8.20 255.255.255.0
+no shut
+int gi3
+ip add 10.20.20.1 255.255.255.0
+no shut
+exit
+ip route 0.0.0.0 0.0.0.0 208.8.8.10
+
+@ENDPOINT - S1
+sudo ifconfig eth0 10.10.10.10 netmask 255.255.255.0 up
+sudo route add default gw 10.10.10.1
+
+@ENDPOINT - S2
+sudo ifconfig eth0 10.20.20.20 netmask 255.255.255.0 up
+sudo route add default gw 10.20.20.1
