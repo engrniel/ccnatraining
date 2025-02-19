@@ -311,7 +311,7 @@ router bgp 1
  network 208.8.8.0 mask 255.255.255.0
  network 209.9.9.0 mask 255.255.255.0
 end
-@@@ISP1:
+@@@Converge:
 CONFIG T
 router bgp 45
 bgp log-neighbor-changes
@@ -362,7 +362,7 @@ ip route 0.0.0.0 0.0.0.0 null 0
 ip route 10.0.0.0 255.0.0.0 209.9.9.1
 end
 
-Isp4:
+Isp4 (GOOGLE IS AN ISP FOR RICH COMPANIES)
 config t
 int lo 8
  ip add 8.8.8.8 255.255.255.255
