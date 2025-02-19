@@ -1,0 +1,57 @@
+Networks:
+
+conf t
+router ospf 1
+router-id 1.1.1.1
+network 192.168.1.128 0.0.0.31 area 0
+network 10.24.0.0 0.7.255.255 area 0
+network 172.16.64.0 0.0.15.255 area 0
+end
+
+BGP: 
+config t
+router bgp [AS No.]
+bgp log-neighbor-changes
+neighbor [209.9.9.3] remote-as [3]
+neighbor [Ip Add] remote-as [AS No.]
+neighbor [Ip Add] remote-as [AS No.]
+address-family ipv4 
+neighbor [209.9.9.3] activate
+neighbor [Ip Add] activate
+neighbor [Ip Add] activate
+
+
+
+config t
+router bgp 1
+bgp log-neighbor-changes
+neighbor 209.9.9.3 remote-as 3
+neighbor [Ip Add] remote-as 2
+neighbor [Ip Add] remote-as 45
+address-family ipv4 
+neighbor 209.9.9.3 activate
+neighbor [Ip Add] activate
+neighbor [Ip Add] activate
+
+network 1.1.1.1
+network 10.1.1.0 mask 255.255.255.252
+network 207.7.7.0 mask 255.255.255.0
+network 208.8.8.0 mask 255.255.255.0
+network 209.9.9.0 mask 255.255.255.0
+
+
+KATbee
+pass
+
+amecu
+' OR 1=1 -- -
+
+
+
+how to encrypt Cisco Traffic:
+config t
+username admin privilege 15 password pass
+ip domain-name rivanit.com
+crypto key generate rsa
+ip ssh version 2
+
