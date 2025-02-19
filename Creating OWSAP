@@ -1,0 +1,165 @@
+Linux kali 6.6.15-amd64 #1 SMP PREEMPT_DYNAMIC Kali 6.6.15-2kali1 (2024-05-17) x86_64
+
+The programs included with the Kali GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Kali GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Fri Oct 11 23:35:27 2024 from 192.168.108.1
+┌──(kali㉿kali)-[~]
+└─$ 
+                                                                                                                                                                                                                 
+┌──(kali㉿kali)-[~]
+└─$ ?
+?: command not found
+                                                                                                                                                                                                                 
+┌──(kali㉿kali)-[~]
+└─$ help 
+Command 'help' not found, did you mean:
+  command 'helm' from deb kubernetes-helm
+  command 'dhelp' from deb dhelp
+  command 'yelp' from deb yelp
+Try: sudo apt install <deb name>
+                                                                                                                                                                                                                 
+┌──(kali㉿kali)-[~]
+└─$ help ?
+Command 'help' not found, did you mean:
+  command 'helm' from deb kubernetes-helm
+  command 'yelp' from deb yelp
+  command 'dhelp' from deb dhelp
+Try: sudo apt install <deb name>
+                                                                                                                                                                                                                 
+┌──(kali㉿kali)-[~]
+└─$ yelp       
+
+(yelp:7856): Gtk-WARNING **: 01:25:09.740: cannot open display: 
+                                                                                                                                                                                                                 
+┌──(kali㉿kali)-[~]
+└─$ sudo su 
+[sudo] password for kali: 
+┌──(root㉿kali)-[/home/kali]
+└─# ls
+beef  Desktop  Documents  Downloads  Music  mutillidae  opt  pentbox-1.8  Pictures  Public  ransom1  ransonware  Templates  Videos  yersinia.log
+                                                                                                                                                                                                                 
+┌──(root㉿kali)-[/home/kali]
+└─# cd mutillidae
+                                                                                                                                                                                                                 
+┌──(root㉿kali)-[/home/kali/mutillidae]
+└─# ls
+LICENSE  README-INSTALLATION.md  README.md  src
+                                                                                                                                                                                                                 
+┌──(root㉿kali)-[/home/kali/mutillidae]
+└─# cd src       
+                                                                                                                                                                                                                 
+┌──(root㉿kali)-[/home/kali/mutillidae/src]
+└─# ls
+add-to-your-blog.php               configuration                framer.html             page-not-found.php             robots-txt.php                   test-connectivity.php
+ajax                               content-security-policy.php  framing.php             password-generator.php         secret-administrative-pages.php  text-file-viewer.php
+arbitrary-file-inclusion.php       cors.php                     hints-page-wrapper.php  passwords                      set-background-color.php         upload-file.php
+authorization-required.php         credits.php                  home.php                pen-test-tool-lookup-ajax.php  set-up-database.php              user-agent-impersonation.php
+back-button-discussion.php         data                         html5-storage.php       pen-test-tool-lookup.php       show-log.php                     user-info.php
+browser-info.php                   database-offline.php         images                  php-errors.php                 site-footer-xss-discussion.php   user-info-xpath.php
+cache-control.php                  directory-browsing.php       includes                phpinfo.php                    source-viewer.php                user-poll.php
+capture-data.php                   dns-lookup.php               index.php               privilege-escalation.php       sqlmap-targets.php               view-someones-blog.php
+captured-data.php                  documentation                javascript              redirectandlog.php             ssl-enforced.php                 view-user-privilege-level.php
+classes                            document-viewer.php          jwt.php                 register.php                   ssl-misconfiguration.php         webservices
+client-side-comments.php           echo.php                     labs                    rene-magritte.php              styles                           xml-validator.php
+client-side-control-challenge.php  edit-account-profile.php     login.php               repeater.php                   styling-frame.php
+conference-room-lookup.php         evil-tabby-cat.php           nice-tabby-cat.php      robots.txt                     styling.php
+                                                                                                                                                                                                                 
+┌──(root㉿kali)-[/home/kali/mutillidae/src]
+└─# ls -l
+total 584
+-rwxrwxr-x 1 kali kali 12571 Sep  4 06:18 add-to-your-blog.php
+drwxrwxr-x 2 kali kali  4096 Sep  4 06:18 ajax
+-rwxrwxr-x 1 kali kali  4922 Sep  4 06:18 arbitrary-file-inclusion.php
+-rwxrwxr-x 1 kali kali   494 Sep  4 06:18 authorization-required.php
+-rwxrwxr-x 1 kali kali  1431 Sep  4 06:18 back-button-discussion.php
+-rwxrwxr-x 1 kali kali  8368 Sep  4 06:18 browser-info.php
+-rwxrwxr-x 1 kali kali  3550 Sep  4 06:18 cache-control.php
+-rwxrwxr-x 1 kali kali  1842 Sep  4 06:18 capture-data.php
+-rwxrwxr-x 1 kali kali  6370 Sep  4 06:18 captured-data.php
+drwxrwxr-x 2 kali kali  4096 Sep  4 06:18 classes
+-rwxrwxr-x 1 kali kali   959 Sep  4 06:18 client-side-comments.php
+-rwxrwxr-x 1 kali kali 20863 Sep  4 06:18 client-side-control-challenge.php
+-rwxrwxr-x 1 kali kali  5689 Sep  4 06:18 conference-room-lookup.php
+drwxrwxr-x 6 kali kali  4096 Sep  4 06:18 configuration
+-rwxrwxr-x 1 kali kali  5003 Sep  4 06:18 content-security-policy.php
+-rwxrwxr-x 1 kali kali  6131 Sep  4 06:18 cors.php
+-rwxrwxr-x 1 kali kali  2858 Sep  4 06:18 credits.php
+drwxrwxr-x 2 kali kali  4096 Sep  4 06:18 data
+-rwxrwxr-x 1 kali kali  8982 Sep  4 06:18 database-offline.php
+-rwxrwxr-x 1 kali kali  1296 Sep  4 06:18 directory-browsing.php
+-rwxrwxr-x 1 kali kali  6552 Sep  4 06:18 dns-lookup.php
+drwxrwxr-x 2 kali kali  4096 Sep  4 06:18 documentation
+-rwxrwxr-x 1 kali kali  6476 Sep  4 06:18 document-viewer.php
+-rwxrwxr-x 1 kali kali  5466 Sep  4 06:18 echo.php
+-rwxrwxr-x 1 kali kali 10629 Sep  4 06:18 edit-account-profile.php
+-rwxrwxr-x 1 kali kali    88 Sep  4 06:18 evil-tabby-cat.php
+-rwxrwxr-x 1 kali kali  1358 Sep  4 06:18 framer.html
+-rwxrwxr-x 1 kali kali  1061 Sep  4 06:18 framing.php
+-rwxrwxr-x 1 kali kali  2652 Sep  4 06:18 hints-page-wrapper.php
+-rwxrwxr-x 1 kali kali  2695 Sep  4 06:18 home.php
+-rwxrwxr-x 1 kali kali  8508 Sep  4 06:18 html5-storage.php
+drwxrwxr-x 3 kali kali  4096 Sep  4 06:18 images
+drwxrwxr-x 3 kali kali  4096 Sep  4 08:31 includes
+-rwxrwxr-x 1 kali kali 19213 Sep  4 06:18 index.php
+drwxrwxr-x 8 kali kali  4096 Sep  4 06:18 javascript
+-rwxrwxr-x 1 kali kali  3628 Sep  4 06:18 jwt.php
+drwxrwxr-x 3 kali kali  4096 Sep  4 06:18 labs
+-rwxrwxr-x 1 kali kali  5918 Sep  4 06:18 login.php
+-rwxrwxr-x 1 kali kali    82 Sep  4 06:18 nice-tabby-cat.php
+-rwxrwxr-x 1 kali kali   263 Sep  4 06:18 page-not-found.php
+-rwxrwxr-x 1 kali kali  3419 Sep  4 06:18 password-generator.php
+drwxrwxr-x 2 kali kali  4096 Sep  4 06:18 passwords
+-rwxrwxr-x 1 kali kali  9140 Sep  4 06:18 pen-test-tool-lookup-ajax.php
+-rwxrwxr-x 1 kali kali 10662 Sep  4 06:18 pen-test-tool-lookup.php
+-rwxrwxr-x 1 kali kali   649 Sep  4 06:18 php-errors.php
+-rwxrwxr-x 1 kali kali   932 Sep  4 06:18 phpinfo.php
+-rwxrwxr-x 1 kali kali  1782 Sep  4 06:18 privilege-escalation.php
+-rwxrwxr-x 1 kali kali  5049 Sep  4 06:18 redirectandlog.php
+-rwxrwxr-x 1 kali kali  7296 Sep  4 06:18 register.php
+-rwxrwxr-x 1 kali kali   831 Sep  4 06:18 rene-magritte.php
+-rwxrwxr-x 1 kali kali  7575 Sep  4 06:18 repeater.php
+-rwxrwxr-x 1 kali kali   141 Sep  4 06:18 robots.txt
+-rwxrwxr-x 1 kali kali  1442 Sep  4 06:18 robots-txt.php
+-rwxrwxr-x 1 kali kali  1297 Sep  4 06:18 secret-administrative-pages.php
+-rwxrwxr-x 1 kali kali  3948 Sep  4 06:18 set-background-color.php
+-rwxrwxr-x 1 kali kali 78579 Sep  4 06:18 set-up-database.php
+-rwxrwxr-x 1 kali kali  4575 Sep  4 06:18 show-log.php
+-rwxrwxr-x 1 kali kali  2886 Sep  4 06:18 site-footer-xss-discussion.php
+-rwxrwxr-x 1 kali kali  9321 Sep  4 06:18 source-viewer.php
+-rwxrwxr-x 1 kali kali  1265 Sep  4 06:18 sqlmap-targets.php
+-rwxrwxr-x 1 kali kali   445 Sep  4 06:18 ssl-enforced.php
+-rwxrwxr-x 1 kali kali  1468 Sep  4 06:18 ssl-misconfiguration.php
+drwxrwxr-x 4 kali kali  4096 Sep  4 06:18 styles
+-rwxrwxr-x 1 kali kali  1854 Sep  4 06:18 styling-frame.php
+-rwxrwxr-x 1 kali kali  2308 Sep  4 06:18 styling.php
+-rwxrwxr-x 1 kali kali  3558 Sep  4 06:18 test-connectivity.php
+-rwxrwxr-x 1 kali kali 10395 Sep  4 06:18 text-file-viewer.php
+-rwxrwxr-x 1 kali kali  7999 Sep  4 06:18 upload-file.php
+-rwxrwxr-x 1 kali kali  7049 Sep  4 06:18 user-agent-impersonation.php
+-rwxrwxr-x 1 kali kali  7191 Sep  4 06:18 user-info.php
+-rwxrwxr-x 1 kali kali  7648 Sep  4 06:18 user-info-xpath.php
+-rwxrwxr-x 1 kali kali  9753 Sep  4 06:18 user-poll.php
+-rwxrwxr-x 1 kali kali  8754 Sep  4 06:18 view-someones-blog.php
+-rwxrwxr-x 1 kali kali  6905 Sep  4 06:18 view-user-privilege-level.php
+drwxrwxr-x 4 kali kali  4096 Sep  4 06:18 webservices
+-rwxrwxr-x 1 kali kali  6699 Sep  4 06:18 xml-validator.php
+                                                                                                                                                                                                                 
+┌──(root㉿kali)-[/home/kali/mutillidae/src]
+└─# cd /  
+                                                                                                                                                                                                                 
+┌──(root㉿kali)-[/]
+└─# cd opt/lampp/ 
+                                                                                                                                                                                                                 
+┌──(root㉿kali)-[/opt/lampp]
+└─# ./lampp start
+Starting XAMPP for Linux 8.0.30-0...
+XAMPP: Starting Apache...ok.
+XAMPP: Starting MySQL...ok.
+XAMPP: Starting ProFTPD...ok.
+                                                                                                                                                                                                                 
+┌──(root㉿kali)-[/opt/lampp]
+└─# 10.11.1.101
