@@ -10,7 +10,7 @@ WC: 0.0.0.7
 
 3.) 172.16.210.5/19
 Network: 172.16.192.0
-SM: 255.255.240.0
+SM: 255.255.224.0
 WC: 0.0.15.255
 
 OSPF:
@@ -25,13 +25,13 @@ router ospf 1
 router-id 1.1.1.1
 network 10.96.0.0 0.15.255.255 area 0
 network 192.168.0.0 0.0.0.7 area 0
-network 172.16.192.0 0.0.15.255 area 0
+network 172.16.192.0 0.0.31.255 area 0
 exit
 
 router eigrp 100
 network 10.96.0.0 0.15.255.255
 network 192.168.0.0 0.0.0.7
-network 172.16.192.0 0.0.15.255
+network 172.16.192.0 0.0.31.255
 exit
 
 
