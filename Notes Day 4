@@ -10,6 +10,6 @@ Data Stream => SAW CHK => SRC & DEST PORT
 
 
 Hack Your Neighbor
-nmap -sP [NETWORK IP][SM]
+nmap -sP [NETWORK IP][SM] - to see the ip host
 nmap -s -p 
-
+nmap -v [IP Add] - to see the open ports
