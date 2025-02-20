@@ -1,0 +1,196 @@
+netstat -s -p tcp
+nmap -v www.ccp.edu.ph
+
+tcp.flags.syn==1 && tcp.flags.ack==0 (Wireshark Filter)
+
+
+Transport:
+Data Stream => SAW CHK => SRC & DEST PORT
+
+
+
+Hack Your Neighbor
+nmap -sP [NETWORK IP][SM] - to see the ip host
+nmap -s -p 
+nmap -v [IP Add] - to see the open ports
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+protocol hacker victim port:
+
+Config t
+service timestamps log datetime
+service timestamps debug datetime
+logging 10.11.1.10
+logging trap 5
+no ip access-list extended fwp1
+ip access-list extended fwp1
+permit tcp any host www.web310.com eq 80 log
+permit tcp any host www.web310.com eq 443 log
+permit icmp any host www.web310.com log
+permit tcp any host www.web311.com eq 53 log
+permit tcp any host www.web311.com eq 443 log
+permit tcp any host www.web311.com eq 22 log
+int gi3
+ip access-group fwp1 in
+do sho ip access-list fwp1
+
+ip access-list extended fwp2
+permit icmp any host www.web310.com
+permit tcp any host www.web310.com eq 443
+permit tcp any host www.web311.com eq 53
+int gi3
+no ip access-group fwp2 in
+do sho ip access-list fwp2
+
+
+conf t
+service timestamps log datetime
+service timestamps debug datetime
+logging 10.11.1.10
+logging trap 5
+ip access-list extended KAINNA
+permit tcp any host www.web310.com eq 443
+permit tcp any host www.web311.com eq 443
+int gi3
+no ip access-group KAINNA in
+ip access-group KAINNA in
+do sho ip access-list KAINNA
+end
+
+
+ip access-list extended GAWAMO
+permit tcp any host www.web310.com eq 80 log
+permit tcp any host www.web310.com eq 443 log
+permit tcp any host www.web310.com eq 22 log
+permit tcp any host www.web310.com eq 53 log
+permit tcp any host www.web311.com eq 80 log
+permit tcp any host www.web311.com eq 23 log
+permit tcp any host www.web311.com eq 22 log
+permit icmp any host www.web311.com log
+int gi3
+no ip access-group GAWAMO in
+do sho ip access-list GAWAMO
+end
+
+
+sudo su
+ifconfig eth0 192.168.102.24 netmask 255.255.255.0 up
+route add default gw 192.168.103.11
+ping 192.168.102.11
+
+
+config t
+int gi 1
+ip nat OUTSIDE
+int gi 2
+ip nat INSIDE
+int gi 3
+ip nat INSIDE
+access-list 8 permit 192.168.102.0 0.0.0.255
+access-list 8 permit 192.168.103.0 0.0.0.255
+ip nat inside source list 8 interface Gi 1 overload
+ip nat inside source static 192.168.103.21 208.8.8.51
+ip nat inside source static 192.168.103.22 208.8.8.52
+ip nat inside source static 192.168.102.24 208.8.8.124
+end
+
+
+
+
+
+conf t
+ip nat inside source static tcp 192.168.103.221 80 208.8.8.69 8080
+ip nat inside source static tcp 192.168.103.222 80 208.8.8.88 8080
+
+BLDG1
+sudo su
+ifconfig eth0 192.168.103.221 netmask 255.255.255.0 up
+route add default gw 192.168.103.11
+ping 192.168.102.11
+
+BLDG2
+sudo su
+ifconfig eth0 192.168.103.222 netmask 255.255.255.0 up
+route add default gw 192.168.103.11
+ping 192.168.102.11
+
+
+
+config t
+int gi 3
+no ipv6 address aaaa:bbbb:cccc:400::a/70
+exit
+int gi 2
+ipv6 address aaaa:bbbb:cccc:400::F/70
+do ping aaaa:bbbb:cccc:400::F
+
+ping aaaa:bbbb:cccc:400::f
+
+
+
+
+config t
+int loopback 1
+ipv6 address fefe:fefe:fefe:0000::f/73
+int loopback 2
+ipv6 address fefe:fefe:fefe:0080::f/73
+int loopback 3
+ipv6 address fefe:fefe:fefe:0100::f/73
+int loopback 4
+ipv6 address fefe:fefe:fefe:0180::f/73
+int loopback 5
+ipv6 address fefe:fefe:fefe:0200::f/73
+int loopback 6
+ipv6 address fefe:fefe:fefe:0280::f/73
+int loopback 7
+ipv6 address cafe:cafe:cafe:0038::f/61
+int loopback 8
+ipv6 address cafe:cafe:cafe:0040::f/61
+int loopback 9
+ipv6 address cafe:cafe:cafe:0048::f/61
+int loopback 10
+ipv6 address cafe:cafe:cafe:0050::f/61
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
