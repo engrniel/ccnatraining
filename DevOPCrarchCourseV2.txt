@@ -1,3 +1,9 @@
+********************************
+400 = Typographical Error
+409 = Duplicate Variables or Configurations
+401 = Wrong Password
+201 = GOOD
+********************************
 python.exe -m pip install --upgrade pip
 pip install ascii_magic
 pip install beautifulsoup4
