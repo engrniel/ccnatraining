@@ -229,10 +229,10 @@ Top 5 brands: PANG MAYAMAN
 sh spanning-tree vlan 1
 
 TASK3: EXPENSIVE SWITCH/MANAGEABLE SWITCH:\ = 20k
-1. mac address learning": sh mac address-table
+1. mac address learning": sh mac address-table    (multicast mac: 01:00:5e:x:x:x & broadcast: ff:ff:ff:ff:ff:ff)
 2  mac address filtering
 3  mac address forwaring
-4  Php: loop avoidance
+4  Php: loop avoidance = prevents connecting utp to itself to avoid network loop.
 5. $$: Vlan Feature $$ = 60k up
 
 COREbaba12#sh mac address-table
@@ -285,6 +285,7 @@ WonderWoman: 802.1w: rapidSTP
 "quickly,Brutally protect switches"
 SuperMan: 802.1s: MiSTP
 "Protect Many Switches at the same time!"
+X-Men: 802.1x: port-based authentication
 
 TASK8: ACCESS PORTS VS TRUNK PORTS: lab mo sa exam.
 +
@@ -327,7 +328,7 @@ Task9.2: STP Port Roles: 802.1D protect switches slowly/gently 30s
 DesignatedPort/DP = fwd port of Root Bridge
 RootPort/RP = fwd port of non-root Bridge(1 only)
 AlternatePort/AP = blk port of nonRootPorts
-BackupPort = yuck yuck, suck urself. enter urself, self-service
+BackupPort = yuck yuck, suck urself. enter urself, self-service (PORT CONNECTED TO ITSELF ON SWITCH!!!!)
 
 how becomes RootPort = kanangKamay
 Cost >> Priority >> Number
@@ -408,7 +409,7 @@ cpu2: vlan 21-29
 cpu3: vlan 31-39
 @TAAs/BABA: d1,d2,a1,a2
 CONFIG T
-spanning-tree mode Mst
+spanning-tree mode [MsT (802.1S,), Rapid PVST (802.1W), PVST (802.1D)]
 spanning-tree mst configuration
  name supermanstp
  revision 1
